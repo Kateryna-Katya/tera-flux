@@ -1,56 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/tera-flux/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/tera-flux/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/tera-flux/assets/styles-guStct1H.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tera-Flux | Искусство создания AI-ботов</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 5 L95 50 L50 95 L5 50 Z' fill='none' stroke='%23C0FF00' stroke-width='8'/><path d='M30 50 L50 30 L70 50 L50 70 Z' fill='%23C0FF00'/></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" crossorigin src="/tera-flux/assets/main-BUbMUK_X.js"></script>
+    <link rel="stylesheet" crossorigin href="/tera-flux/assets/main-BS39sFHd.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="logo">
+          <span class="logo__icon"></span>
+          <span class="logo__text">Tera-Flux</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="nav">
+          <ul class="nav__list">
+              <li><a href="./#hero" class="nav__link">Главная</a></li>
+              <li><a href="./#about" class="nav__link">Экосистема</a></li>
+              <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
+              <li><a href="./#innovations" class="nav__link">Инновации</a></li>
+              <li><a href="./#blog" class="nav__link">Блог</a></li>
+          </ul>
+      </nav>
+      <a href="./#contact" class="btn btn--header">Начать</a>
+      <button class="burger" aria-label="Menu">
+          <span></span>
+      </button>
   </div>
 </header>
-
+<div class="mobile-menu">
+  <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+          <li><a href="./#hero">Главная</a></li>
+          <li><a href="./#about">Экосистема</a></li>
+          <li><a href="./#benefits">Преимущества</a></li>
+          <li><a href="./#blog">Блог</a></li>
+          <li><a href="./#contact">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+          <a href="tel:+493075614432" class="footer__link">+49 30 75614432</a>
+      </div>
+  </div>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <span class="hero__label" data-aos="fade-right">AI-инструменты для реальных задач</span>
+          <h1 class="hero__title">
+              Воплотите мечты в реальность с <span id="hero-typing" class="text-accent"></span>
+          </h1>
+          <p class="hero__description">
+              От простых чат-ботов до передовых AI-ассистентов. Пошаговый путь, понятный каждому. Откройте новые возможности для вашего проекта уже сегодня.
+          </p>
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#about" class="btn btn--secondary">Узнать детали</a>
+          </div>
+      </div>
+      <div class="hero__viz">
+          <div class="hero__circle"></div>
+          <img src="/tera-flux/assets/one-CrNpxsQc.jpg" alt="AI Interface" class="hero__img">
+      </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">Экосистема Tera-Flux</h2>
+          <p class="section-subtitle">Переосмыслите подход к развитию цифровых помощников</p>
+      </div>
+
+      <div class="bento-grid">
+          <div class="bento-card bento-card--main" data-aos="fade-up">
+              <div class="bento-card__content">
+                  <h3>Платформа года для разработчиков</h3>
+                  <p>Передовая цифровая инфраструктура для тех, кто создает будущее. Мы объединили лучшие AI-инструменты для реальных задач в одном месте.</p>
+              </div>
+              <div class="bento-card__badge">Innovation</div>
+          </div>
+
+          <div class="bento-card bento-card--small" data-aos="fade-up" data-aos-delay="100">
+              <div class="bento-card__icon"><i class="fas fa-microchip"></i></div>
+              <h4>Технология нового поколения</h4>
+              <p>Решения, которые меняют правила игры в сфере автоматизации.</p>
+          </div>
+
+          <div class="bento-card bento-card--small" data-aos="fade-up" data-aos-delay="200">
+              <div class="bento-card__icon"><i class="fas fa-brain"></i></div>
+              <h4>AI-ассистенты</h4>
+              <p>От простых скриптов до самообучающихся моделей.</p>
+          </div>
+
+          <div class="bento-card bento-card--wide" data-aos="fade-up" data-aos-delay="300">
+              <div class="bento-card__content">
+                  <h4>Легко разобраться без опыта</h4>
+                  <p>Пошаговый путь, понятный каждому. Наш блог — это база знаний, где сложные алгоритмы становятся простыми схемами.</p>
+              </div>
+              <div class="bento-card__visual">
+                  <div class="code-dots"><span></span><span></span><span></span></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="features" id="benefits">
+  <div class="container">
+      <div class="section-header center">
+          <h2 class="section-title">Почему выбирают <span class="text-accent">Tera-Flux</span></h2>
+          <p class="section-subtitle">Решения, которые меняют правила игры в сфере AI</p>
+      </div>
+
+      <div class="features__grid">
+          <div class="feature-card" data-aos="zoom-in-up">
+              <div class="feature-card__bg"></div>
+              <div class="feature-card__content">
+                  <div class="feature-card__icon">
+                      <i class="fas fa-bolt"></i>
+                  </div>
+                  <h4>Быстрый и лёгкий старт</h4>
+                  <p>Подключение занимает всего 2 минуты. Начните строить свою карьеру в AI без лишних сложностей.</p>
+                  <a href="#contact" class="feature-card__link">Узнать детали <i class="fas fa-arrow-right"></i></a>
+              </div>
+          </div>
+
+          <div class="feature-card" data-aos="zoom-in-up" data-aos-delay="100">
+              <div class="feature-card__bg"></div>
+              <div class="feature-card__content">
+                  <div class="feature-card__icon">
+                      <i class="fas fa-shield"></i>
+                  </div>
+                  <h4>Проверенный партнер</h4>
+                  <p>Экспертная поддержка на всех этапах разработки. Мы используем методологии, доказавшие эффективность.</p>
+                  <a href="#contact" class="feature-card__link">Запросить доступ <i class="fas fa-arrow-right"></i></a>
+              </div>
+          </div>
+
+          <div class="feature-card" data-aos="zoom-in-up" data-aos-delay="200">
+              <div class="feature-card__bg"></div>
+              <div class="feature-card__content">
+                  <div class="feature-card__icon">
+                      <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h4>Пассивный доход</h4>
+                  <p>Технология для создания ботов, которые работают 24/7. Стратегия роста на базе инноваций.</p>
+                  <a href="#contact" class="feature-card__link">Начать сейчас <i class="fas fa-arrow-right"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="innovations" id="innovations">
+  <canvas id="canvas-particles"></canvas>
+  <div class="container innovations__container">
+      <div class="innovations__content" data-aos="fade-up">
+          <span class="hero__label">Технология нового поколения</span>
+          <h2 class="section-title">AI-инструменты, которые <br><span class="text-accent">меняют правила игры</span></h2>
+          <p class="innovations__text">
+              Мы создаем не просто ботов, а полноценную экосистему. Платформа уже доступна в Европе, предлагая передовые решения для автоматизации бизнеса и повседневных задач.
+          </p>
+          <div class="innovations__stats">
+              <div class="stat-item">
+                  <span class="stat-num">99%</span>
+                  <span class="stat-desc">Точность нейросетей</span>
+              </div>
+              <div class="stat-item">
+                  <span class="stat-num">24/7</span>
+                  <span class="stat-desc">Автономная работа</span>
+              </div>
+              <div class="stat-item">
+                  <span class="stat-num">0.1s</span>
+                  <span class="stat-desc">Скорость отклика</span>
+              </div>
+          </div>
+          <button class="btn btn--primary" onclick="window.location.href='#contact'">Запросить доступ</button>
+      </div>
+  </div>
+</section>
+<section class="blog" id="blog">
+  <div class="container">
+      <div class="blog__header">
+          <div class="section-header">
+              <h2 class="section-title">База <span class="text-accent">знаний</span></h2>
+              <p class="section-subtitle">Практики, применимые уже сегодня: от кода до стратегий роста</p>
+          </div>
+          <a href="#contact" class="btn btn--secondary">Все статьи</a>
+      </div>
+
+      <div class="blog__grid">
+          <article class="blog-card" data-aos="fade-up">
+              <div class="blog-card__img-wrap">
+                  <img src="/tera-flux/assets/two-azHKCClu.jpg" alt="AI Tools" class="blog-card__img">
+                  <span class="blog-card__tag">Технологии</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">02 Февраля, 2026</time>
+                  <h4 class="blog-card__title">Как собрать первого AI-ассистента за 2 минуты</h4>
+                  <p class="blog-card__excerpt">Разбираем пошаговый путь построения архитектуры на базе инноваций этого года.</p>
+                  <a href="#contact" class="blog-card__more">Читать далее <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </article>
+
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="blog-card__img-wrap">
+                  <img src="/tera-flux/assets/three-aC1abVcp.jpg" alt="Passive Income" class="blog-card__img">
+                  <span class="blog-card__tag">Бизнес</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">30 Января, 2026</time>
+                  <h4 class="blog-card__title">Стратегия роста: пассивный доход на ботах</h4>
+                  <p class="blog-card__excerpt">Методологии, доказавшие эффективность в странах ЕС и за их пределами.</p>
+                  <a href="#contact" class="blog-card__more">Читать далее <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </article>
+
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="blog-card__img-wrap">
+                  <img src="/tera-flux/assets/four-KYfW5a0L.jpg" alt="Future Tech" class="blog-card__img">
+                  <span class="blog-card__tag">Инновации</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">25 Января, 2026</time>
+                  <h4 class="blog-card__title">Переосмыслите подход к разработке на Python</h4>
+                  <p class="blog-card__excerpt">AI-инструменты для реальных задач, которые ускоряют деплой в 10 раз.</p>
+                  <a href="#contact" class="blog-card__more">Читать далее <i class="fas fa-chevron-right"></i></a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container">
+      <div class="contact__wrapper">
+          <div class="contact__info" data-aos="fade-right">
+              <h2 class="section-title">Есть <span class="text-accent">вопросы?</span></h2>
+              <p class="contact__subtitle">Получите бесплатную консультацию по всем вопросам разработки и внедрения AI-инструментов.</p>
+
+              <div class="contact__methods">
+                  <div class="method-item">
+                      <i class="fas fa-envelope"></i>
+                      <div>
+                          <span>Пишите нам</span>
+                          <p>hello@tera-flux.life</p>
+                      </div>
+                  </div>
+                  <div class="method-item">
+                      <i class="fas fa-phone"></i>
+                      <div>
+                          <span>Звоните</span>
+                          <p>+49 30 75614432</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contact__form-block" data-aos="fade-left">
+              <form id="ai-contact-form" class="form">
+                  <div class="form__group">
+                      <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="form__group">
+                      <input type="email" name="email" class="form__input" placeholder="Email адрес" required>
+                  </div>
+                  <div class="form__group">
+                      <input type="tel" name="phone" id="phone-input" class="form__input" placeholder="Телефон (только цифры)" required>
+                  </div>
+
+                  <div class="form__captcha">
+                      <label for="captcha">Сколько будет <span id="captcha-question"></span>?</label>
+                      <input type="number" id="captcha-answer" class="form__input" placeholder="Ответ" required>
+                  </div>
+
+                  <div class="form__agree">
+                      <label class="checkbox">
+                          <input type="checkbox" required>
+                          <span class="checkbox__custom"></span>
+                          Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a>
+                      </label>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary btn--full">Начать сейчас</button>
+                  <div id="form-status" class="form__status"></div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
+  <div class="container footer__container">
+      <div class="footer__info">
+          <a href="./#hero" class="logo logo--footer">
+              <span class="logo__text">Tera-Flux</span>
+          </a>
+          <p class="footer__tagline">Технологии, которые работают на вас. Будущее AI-автоматизации уже здесь.</p>
+          <div class="footer__contacts">
+              <a href="tel:+493075614432" class="footer__link">+49 30 75614432</a>
+              <a href="mailto:hello@tera-flux.life" class="footer__link">hello@tera-flux.life</a>
+              <address class="footer__address">Friedrichstraße 176, 10117 Berlin, Germany</address>
+          </div>
+      </div>
+
+      <div class="footer__nav-group">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+              <li><a href="./#hero">Главная</a></li>
+              <li><a href="./#about">Экосистема</a></li>
+              <li><a href="./#benefits">Преимущества</a></li>
+              <li><a href="./#blog">Блог</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__nav-group">
+          <h4 class="footer__title">Документы</h4>
+          <ul class="footer__list">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="./cookies.html">Cookie Policy</a></li>
+              <li><a href="./terms.html">Terms of Use</a></li>
+              <li><a href="./return.html">Refund Policy</a></li>
+              <li><a href="./disclaimer.html">Disclaimer</a></li>
+              <li><a href="./personal-data-policy.html">Data Policy</a></li>
+              <li><a href="./contact.html">Contacts</a></li>
+          </ul>
+      </div>
+  </div>
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__bottom">
+          <p>&copy; 2026 Tera-Flux. Платформа уже доступна в Европе.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <div class="cookie-popup__icon">🍪</div>
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы. Подробнее — в нашей
+              <a href="./cookies.html">Cookie политике</a>.
+          </p>
+          <button id="cookie-accept" class="btn btn--primary">Принять</button>
+      </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
