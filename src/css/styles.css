@@ -910,7 +910,7 @@ ul {
 
 .pages h1 {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: var(--color-accent);
   margin-bottom: 40px;
 }
