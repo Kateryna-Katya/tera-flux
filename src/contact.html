@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tera-Flux | Искусство создания AI-ботов</title>
+    <title>Контакты | Tera-Flux</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 5 L95 50 L50 95 L5 50 Z' fill='none' stroke='%23C0FF00' stroke-width='8'/><path d='M30 50 L50 30 L70 50 L50 70 Z' fill='%23C0FF00'/></svg>">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,13 +13,45 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <load src="./partials/header.html" />
+  <body class="page-legal">
+    <load
+      src="./partials/header.html"
+/>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/main.html" />
-    </main>
+<main>
+  <section class="pages">
+      <div class="container">
+          <h1>Контакты</h1>
+
+          <div class="contact-grid">
+              <div class="contact-item">
+                  <div class="contact-item__icon"><i class="fas fa-envelope"></i></div>
+                  <div class="contact-item__info">
+                      <span class="contact-item__label">Электронная почта</span>
+                      <a href="mailto:hello@tera-flux.life" class="contact-item__value">hello@tera-flux.life</a>
+                  </div>
+              </div>
+
+              <div class="contact-item">
+                  <div class="contact-item__icon"><i class="fas fa-phone"></i></div>
+                  <div class="contact-item__info">
+                      <span class="contact-item__label">Телефон (Германия)</span>
+                      <a href="tel:+493075614432" class="contact-item__value">+49 30 75614432</a>
+                  </div>
+              </div>
+
+              <div class="contact-item">
+                  <div class="contact-item__icon"><i class="fas fa-location-dot"></i></div>
+                  <div class="contact-item__info">
+                      <span class="contact-item__label">Адрес офиса</span>
+                      <p class="contact-item__value">Friedrichstraße 176, 10117 Berlin, Germany</p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
+</main>
 
     <load src="./partials/footer.html" />
     <div id="cookie-popup" class="cookie-popup">
